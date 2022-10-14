@@ -33,6 +33,18 @@
     hljs.highlightAll();
 </script>
 <body>
+<!-- START: add particles.js -->
+	<div id="particles-js"></div>
+	<div id="wrapper">
+	 <!-- Insert your code here -->
+
+	</div>
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/particles.js"></script>
+	<script src="./js/app.js"></script>
+<!-- END: add particles.js -->
+
 {{ if not .IsHome }}
 {{ partial "header/nav" . }}
 {{ end }}
