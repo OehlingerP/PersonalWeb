@@ -34,6 +34,11 @@ menu:
         img: /img/logo1.png
       url: /post/
       weight: 1
+    - name: Posts
+      params:
+        img: /img/logo2.png
+      url: /post/
+      weight: 2
     - name: Projects
       params:
         img: /img/logo2.png
