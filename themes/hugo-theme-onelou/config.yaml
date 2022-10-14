@@ -17,7 +17,7 @@ params:
     facebook: 'https://facebook.com/peter.ohlinger'
     linkedin: 'https://www.linkedin.com/in/peter-oehlinger'
   footer:
-    hidePowered: false # Powered by Hugo & theme OneLou
+    hidePowered: true # Powered by Hugo & theme OneLou
     # beian: # ICP备案号
     gongan:
       # code: 公安备案号XXXX
