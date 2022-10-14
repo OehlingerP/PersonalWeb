@@ -31,16 +31,16 @@ menu:
   navs:
     - name: Research
       params:
-        img: /img/logo1.png
+        img: /img/crane-circle-bw.png
       url: /post/
       weight: 1
     - name: Projects
       params:
-        img: /img/logo2.png
+        img: /img/neurons-circle.png
       url: /projects/
       weight: 2
     - name: About
       params:
-        img: /img/logo3.png
+        img: /img/ship-circle-bw.png
       url: /about
       weight: 3

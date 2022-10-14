@@ -17,6 +17,9 @@
         <span style="color: var(--primary-color);">&#x1F878;</span><br />{{ .PrevInSection.Title }}
     </button>
     {{ end }}
+
+	<button type="button"><a href="/" style="color: #d0d3d8;">Back To Home</a></button>
+
     {{ if .NextInSection }}
     <button onclick="window.location.href = '{{ .NextInSection.Permalink }}'">
         <span style="color: var(--primary-color);">&#129146;</span><br />{{ .NextInSection.Title }}
