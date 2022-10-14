@@ -14,6 +14,3 @@ min_version = "0.87.0"
 [author]
   name = "JIANGYY"
   homepage = "https://jiangyy.com"
-
-[markup.goldmark.renderer]
-  unsafe= true

@@ -15,18 +15,18 @@ params:
     github: 'https://github.com/OehlingerP'
     twitter: 'https://twitter.com/OehlingerP'
     facebook: 'https://facebook.com'
-    linkedIn: 'linkedin.com/in/peter-oehlinger'
+    linkedin: 'linkedin.com/in/peter-oehlinger'
   footer:
     hidePowered: false # Powered by Hugo & theme OneLou
-    beian: # ICP备案号
+    # beian: # ICP备案号
     gongan:
       # code: 公安备案号XXXX
       # txt: 京公网安备XXXX号
     since: 2022
     copyright:
   prefix:
-    h2: "※ "
-    h3: "✧ "
+    h2: ""
+    h3: ""
 menu:
   navs:
     - name: Research
@@ -34,11 +34,6 @@ menu:
         img: /img/logo1.png
       url: /post/
       weight: 1
-    - name: Posts
-      params:
-        img: /img/logo2.png
-      url: /post/
-      weight: 2
     - name: Projects
       params:
         img: /img/logo2.png
