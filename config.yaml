@@ -1,4 +1,11 @@
 theme: "hugo-theme-onelou"
-baseURL: https://example.org/
+baseURL: /
 languageCode: en-us
 title: Peter Öhlinger
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]

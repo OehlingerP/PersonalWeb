@@ -1,0 +1,123 @@
+---
+title: "New"
+date: 2022-10-14T10:09:13+02:00
+draft: false
+output: md_document
+---
+
+
+
+<div id="idea" class="section level1">
+<h1>Idea</h1>
+<p>Following the <em>KISS</em> principle of modeling I start with the simplest model
+possible to investigate shock amplifications in the global trade network. The
+question is how shocks at the micro/sector level may trigger major global
+economic shocks.</p>
+<div id="supply-chain-1" class="section level2">
+<h2>Supply Chain 1</h2>
+<pre><code>## Loading required package: dplyr</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre><code>## Loading required package: extrafont</code></pre>
+<pre><code>## Registering fonts with R</code></pre>
+<pre><code>## Loading required package: ggplot2</code></pre>
+<pre><code>## Loading required package: igraph</code></pre>
+<pre><code>## 
+## Attaching package: &#39;igraph&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:dplyr&#39;:
+## 
+##     as_data_frame, groups, union</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     decompose, spectrum</code></pre>
+<pre><code>## The following object is masked from &#39;package:base&#39;:
+## 
+##     union</code></pre>
+<pre><code>## Loading required package: lubridate</code></pre>
+<pre><code>## 
+## Attaching package: &#39;lubridate&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:igraph&#39;:
+## 
+##     %--%, union</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     date, intersect, setdiff, union</code></pre>
+<pre><code>## Loading required package: officer</code></pre>
+<pre><code>## Loading required package: openxlsx</code></pre>
+<pre><code>## Loading required package: rvg</code></pre>
+<pre><code>## Loading required package: tidyr</code></pre>
+<pre><code>## 
+## Attaching package: &#39;tidyr&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:igraph&#39;:
+## 
+##     crossing</code></pre>
+<pre><code>## 
+## Attaching package: &#39;Rphd&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:dplyr&#39;:
+## 
+##     collapse</code></pre>
+<div class="figure"><span style="display:block;" id="fig:supply-chain1"></span>
+<img src="/projects/new_files/figure-html/supply-chain1-1.png" alt="Simple one good two country economy. A 10\% percent shock in China will lead to a 10\% reduction of output in the U.S. Thus, there is no shock amplification." width="672" />
+<p class="caption">
+Figure 1: Simple one good two country economy. A 10% percent shock in China will lead to a 10% reduction of output in the U.S. Thus, there is no shock amplification.
+</p>
+</div>
+<p>Let’s start with the simplest trade model possible and look at a world with only
+one good and two countries, let’s say China and the United States, where China
+is the supplier of raw materials and the U.S. uses these materials to produce
+consumption goods for U.S. citizens. In this model (see figure
+<span class="math inline">\(\ref{fig:supply-chain1}\)</span>), shocks evolve linear (no amplification) and affect
+each country equally.</p>
+</div>
+<div id="supply-chain-2" class="section level2">
+<h2>Supply Chain 2</h2>
+<p>If we add a second good to the economy (see figure <span class="math inline">\(\ref{fig:supply-chain2}\)</span>),
+things may change. Let’s say the U.S. needs 75 of good 1 and 25 of good 2 to
+produce 100 of good 3. Assume another 10% shock hits the Chinese economy,
+however, the crisis only affects good 2. Hence, output of good 2 drops from 25
+to 15. While the total shock for China is still 10%, things changed considerably
+for the United States as output drops by 40% (<span class="math inline">\(10/25=40\%\)</span>).</p>
+<div class="figure"><span style="display:block;" id="fig:supply-chain2"></span>
+<img src="/projects/new_files/figure-html/supply-chain2-1.png" alt="Simple two good two country economy. A 10\% percent shock in China's good 1 sector will lead to a larger reduction of output in the U.S. depending on the production input ratio. Thus, there is an amplification of the shock." width="672" />
+<p class="caption">
+Figure 2: Simple two good two country economy. A 10% percent shock in China’s good 1 sector will lead to a larger reduction of output in the U.S. depending on the production input ratio. Thus, there is an amplification of the shock.
+</p>
+</div>
+</div>
+<div id="supply-chain-3" class="section level2">
+<h2>Supply Chain 3</h2>
+<p><em>Supply chain 2</em> is a simple example of how sector-specific shocks in one country may
+amplify. What we also see is that countries at the end of the supply chain are
+more vulnerable than countries at the beginning as they depend on many more
+countries. To see this we do one more simple example of probability of default.
+Let’s assume at each link in figure <span class="math inline">\(\ref{fig:supply-chain3}\)</span> has a
+probability of default of 5%. This results in the following default
+probabilities: India = <span class="math inline">\(5\%\)</span>, France <span class="math inline">\(\rightarrow 1-0.95^2=9.8\%\)</span>, and the U.S.
+<span class="math inline">\(\rightarrow 1-0.95^3=14.3\%\)</span>.</p>
+<div class="figure"><span style="display:block;" id="fig:supply-chain3"></span>
+<img src="/projects/new_files/figure-html/supply-chain3-1.png" alt="Simple 4-player supply chain. The default probability grows with each link in the network. Thus, producers at the end of the supply chain face higher risks." width="672" />
+<p class="caption">
+Figure 3: Simple 4-player supply chain. The default probability grows with each link in the network. Thus, producers at the end of the supply chain face higher risks.
+</p>
+</div>
+</div>
+<div id="conclusion-and-what-is-missing" class="section level2">
+<h2>Conclusion and what is missing</h2>
+<ul>
+<li>Shocks may amplify depending on which industries and countries are affected.</li>
+<li>Later stages of the supply chain bear higher risks.</li>
+<li>If available, good 2 can be sourced from other suppliers, hence, the shock
+would be dampened. Prices might go up.</li>
+<li>A shock can be (temporarily) mitigated by domestic stocks.</li>
+<li>There will be repercussions. If the U.S. experiences a dramatic drop in
+economic output industry 2 will also be affected. Hence, the shock will also hit
+China stronger than initially expected.</li>
+</ul>
+</div>
+</div>
