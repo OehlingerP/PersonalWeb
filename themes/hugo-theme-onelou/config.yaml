@@ -14,8 +14,8 @@ params:
   opengraph:
     github: 'https://github.com/OehlingerP'
     twitter: 'https://twitter.com/OehlingerP'
-    facebook: 'https://facebook.com'
-    linkedin: 'linkedin.com/in/peter-oehlinger'
+    facebook: 'https://facebook.com/peter.ohlinger'
+    linkedin: 'https://www.linkedin.com/in/peter-oehlinger'
   footer:
     hidePowered: false # Powered by Hugo & theme OneLou
     # beian: # ICP备案号
