@@ -37,7 +37,13 @@
 	<div id="particles-js"></div>
 	<div id="wrapper">
 	 <!-- Insert your code here -->
-
+		{{ if not .IsHome }}
+		{{ partial "header/nav" . }}
+		{{ end }}
+		<div id="center" class='center' {{ if .IsHome }} style="background: transparent;padding:1%" {{ end }}>
+			{{ block "center_head" . }}{{ end }}
+			{{ block "center_main" . }}{{ end }}
+		</div>
 	</div>
 
 	<script src="js/jquery.min.js"></script>
@@ -45,13 +51,6 @@
 	<script src="js/app.js"></script>
 <!-- END: add particles.js -->
 
-{{ if not .IsHome }}
-{{ partial "header/nav" . }}
-{{ end }}
-<div id="center" class='center' {{ if .IsHome }} style="background: transparent;padding:1%" {{ end }}>
-    {{ block "center_head" . }}{{ end }}
-    {{ block "center_main" . }}{{ end }}
-</div>
 </body>
 
 {{ block "copyright" . }}{{ end }}
