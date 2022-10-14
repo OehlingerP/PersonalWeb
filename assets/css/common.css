@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #ee5b32;
+    --primary-color: #C0D267; /*#ee5b32; safran: f4b752; yellow: #fff924*/ 
     --font-color: #d0d3d8;
-    --body-background-color: #17181a;
+    --body-background-color: #17181a; /*#17181a;*/
     --content-background-color: #1f2022;
     --scorllbar-color: #343232;
 
@@ -358,5 +358,5 @@ canvas
 }
 
 span{
-	color: #ee5b32;
+	color: #C0D267; /* safran: #f4b752, yellow: #fff924 original: #ee5b32
 }
