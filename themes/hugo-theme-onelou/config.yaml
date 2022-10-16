@@ -2,10 +2,10 @@ module:
     hugoVersion:
         extended: true
         min: "0.87.0"
-baseURL: http://localhost:1313/
-title: OneLou
-keywords: OneLou
-description: OneLou
+baseURL: https://peteroehlinger.com
+title: Peter Öhlinger
+keywords: Economics, R Programming, Complex Systems
+description: PhD student interested in economics and complex systems.
 paginate: 10
 hasCJKLanguage: true
 languageCode: 'en-us'
