@@ -41,7 +41,7 @@
 		{{ partial "header/nav" . }}
 		{{ end }}
 		<div id="center" class='center' {{ if .IsHome }} style="background: transparent;padding:1%" {{ end }}>
-			<a href="/" style="color: var(--primary-color); text-decoration: none;">{{ block "center_head" . }}</a>{{ end }}
+			<a href="/" style="color: var(--primary-color); text-decoration: none;">{{ block "center_head" . }}{{ end }}</a>
 			{{ block "center_main" . }}{{ end }}
 		</div>
 	</div>
