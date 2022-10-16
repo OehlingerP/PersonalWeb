@@ -34,11 +34,11 @@ menu:
         img: /img/crane-circle-bw.png
       url: /publications
       weight: 1
-    # - name: Research
-    #   params:
-    #     img: /img/crane-circle-bw.png
-    #   url: /post/
-    #   weight: 2
+    - name: Research
+      params:
+        img: /img/crane-circle-bw.png
+      url: /post/
+      weight: 2
     - name: Projects
       params:
         img: /img/neurons-circle.png
