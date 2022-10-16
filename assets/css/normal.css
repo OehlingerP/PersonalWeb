@@ -26,7 +26,7 @@
     -webkit-transform:translate(-40%,50%);
     -o-transform:translate(-40%,50%);
     position: relative;
-    width: 60%;
+    width: 80%;
     color: var(--font-color);
 }
 
