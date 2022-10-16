@@ -1,3 +1,3 @@
 ---
-title: "My Research"
+title: "Research"
 ---
