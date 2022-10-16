@@ -6,6 +6,8 @@ output: md_document
 cover: "crane_circle.png"
 description: "Test me"
 ---
+<!-- add customURL: "https://baidu.com/" to header if you want to link to another site  -->
+
 # Idea
 
 Following the *KISS* principle of modeling I start with the simplest model
