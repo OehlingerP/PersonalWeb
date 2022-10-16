@@ -14,17 +14,17 @@
 }
 
 .center {
-    width: 60%;
-    padding: 2.5%;
+    width: 55%;
+    /*padding: 2.5%;*/
     /* box-shadow: 0 0 5px 5px; */
 }
 
 .center_home {
-	transform:translate(-20%,-50%);
-    -moz-transform:translate(-20%,-50%);
-    -ms-transform:translate(-20%,-50%);
-    -webkit-transform:translate(-20%,-50%);
-    -o-transform:translate(-20%,-50%);
+	transform:translate(-20%,50%);
+    -moz-transform:translate(-20%,50%);
+    -ms-transform:translate(-20%,50%);
+    -webkit-transform:translate(-20%,50%);
+    -o-transform:translate(-20%,50%);
     /*position: fixed;
     top: 35%;
     left: 20%;
