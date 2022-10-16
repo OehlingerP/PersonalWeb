@@ -13,17 +13,25 @@
 
 
     /* 首页标题字体 */
-    /* --website-title-font-family: "PingFang SC", '宋体', sans-serif; */
+    --website-title-font-family: 'Verdana', 'Helvetica', 'Arial', sans-serif;
     /* 标题字体 */
-    /* --title-font-family: 'PingFang SC', '宋体', sans-serif; */
+    --title-font-family: 'Verdana', 'Helvetica', 'Arial', sans-serif;
     /* 正文字体 */
     /* --content-font-family: "JetBrains Mono", 'Mirages Custom', 'Merriweather', 'Open Sans', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'Segoe UI Emoji', 'Segoe UI Symbol', Helvetica, Arial, sans-serif; */
-    --content-font-family: "JetBrains Mono", sans-serif;
+    --content-font-family: 'Verdana', 'Helvetica', 'Arial', sans-serif;
     /* 座右铭字体 */
-    /* --motto-font-family: "PingFang SC", sans-serif; */
+    --motto-font-family: 'Verdana', 'Helvetica', 'Arial', sans-serif;
     /* 代码字体 */
-    /* --code-font-family: "JetBrains Mono", sans-serif; */	
+    --code-font-family: "Courier", "Courier New", serif;
 
+}
+
+.site-nav-subtitle, .center_main_contents_left, nav, site-nav {
+  font-family: "Courier", "Courier New", serif;
+}
+
+#about-text {
+  font-family: "Courier", "Courier New", serif;
 }
 
 body {
@@ -358,5 +366,5 @@ canvas
 }
 
 span{
-	color: #C0D267; /* safran: #f4b752, yellow: #fff924 original: #ee5b32
+	color: #C0D267; /* safran: #f4b752, yellow: #fff924 original: #ee5b32 */
 }
