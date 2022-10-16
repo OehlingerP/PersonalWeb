@@ -35,7 +35,7 @@
 <body>
 <!-- START: add particles.js -->
 	<div id="particles-js"></div>
-	<div id="wrapper">
+	<!-- <div id="wrapper"> -->
 	 <!-- Insert your code here -->
 		{{ if not .IsHome }}
 		{{ partial "header/nav" . }}
@@ -44,7 +44,7 @@
 			<a href="/" style="color: var(--primary-color); text-decoration: none;">{{ block "center_head" . }}{{ end }}</a>
 			{{ block "center_main" . }}{{ end }}
 		</div>
-	</div>
+	<!-- </div> -->
 
 	<script src="/assets/js/jquery.min.js"></script>
 	<script src="/assets/js/particles.js"></script>
