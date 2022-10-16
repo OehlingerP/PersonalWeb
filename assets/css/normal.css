@@ -20,10 +20,13 @@
 }
 
 .center_home {
-    position: fixed;
+	-moz-transform: translateX(-20%) translateY(50%);
+    -webkit-transform: translateX(-20%) translateY(50%);
+    transform: translateX(-20%) translateY(50%);
+    /*position: fixed;
     top: 35%;
     left: 20%;
-    width: 60%;
+    width: 60%;*/
     color: var(--font-color);
 }
 
