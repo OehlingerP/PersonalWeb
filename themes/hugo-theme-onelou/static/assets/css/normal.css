@@ -20,9 +20,11 @@
 }
 
 .center_home {
-	-moz-transform: translateX(-20%) translateY(50%);
-    -webkit-transform: translateX(-20%) translateY(50%);
-    transform: translateX(-20%) translateY(50%);
+	transform:translate(-20%,-50%);
+    -moz-transform:translate(-20%,-50%);
+    -ms-transform:translate(-20%,-50%);
+    -webkit-transform:translate(-20%,-50%);
+    -o-transform:translate(-20%,-50%);
     /*position: fixed;
     top: 35%;
     left: 20%;
