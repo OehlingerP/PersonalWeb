@@ -29,18 +29,23 @@ params:
     h3: ""
 menu:
   navs:
-    - name: Research
+    - name: Publications
       params:
         img: /img/crane-circle-bw.png
-      url: /post/
+      url: /publications
       weight: 1
+    # - name: Research
+    #   params:
+    #     img: /img/crane-circle-bw.png
+    #   url: /post/
+    #   weight: 2
     - name: Projects
       params:
         img: /img/neurons-circle.png
       url: /projects/
-      weight: 2
+      weight: 3
     - name: About
       params:
         img: /img/ship-circle-bw.png
       url: /about
-      weight: 3
+      weight: 4
